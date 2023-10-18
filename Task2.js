@@ -11,3 +11,19 @@
 // Об'єднайте обидва масиви за допомогою методу concat.
 // Перевірте, чи є в списку ім'я "Юрій" за допомогою методу at.
 // Створіть новий список імен із єдиного списку за допомогою методу from.
+
+
+const class1 = Array.of("Олексій", "Ірина", "Максим")
+const class2 = Array.of("Анна", "Юрій", "Олена")
+
+const resault = class1.concat(class2)
+
+//const check = Boolean(resault.at(4))
+const check = resault.at(4) === "Юрій"
+
+const newlist = Array.from(resault)
+
+console.log(resault);
+console.log(check);
+console.log(newlist)
+
