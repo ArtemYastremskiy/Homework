@@ -104,3 +104,16 @@ def sum(a,b)
 //     return newArr.reduce((accumulator, currentValue) =>  accumulator + currentValue,0);
 // }
 // console.log(SQArrTwo([1,2,3,4,5,6,7,8,9]));
+
+function calc(arr){
+    let result = []
+
+    for (let i = 0; i < result.length; ){
+        console.log(arr[i], arr[i+1]);
+        result.push(arr[i]**arr[i+1])
+    }
+
+    return result
+}
+
+console.log(calc([1, 2, 3, 4]));
