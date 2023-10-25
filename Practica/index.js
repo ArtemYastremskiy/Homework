@@ -19,34 +19,52 @@
 // Lisa => 66
 // Rose => 15
 
-const obj = {
-    name: "Lisa",
-    age: 25,
-    hobbies: [1, 9, 1, 6, 2, 5, 2, 7, 9, 1, 10, 4],
-    friend: {
-        name: "Rose",
-        age: 25,
-        hobbies: []//[1, 9, 1, 6, 2, 4],
-    },
-};
+// const obj = {
+//     name: "Lisa",
+//     age: 25,
+//     hobbies: [1, 9, 1, 6, 2, 5, 2, 7, 9, 1, 10, 4],
+//     friend: {
+//         name: "Rose",
+//         age: 25,
+//         hobbies: []//[1, 9, 1, 6, 2, 4],
+//     },
+// };
 
 
 
-function sum(obj) {
-    try {
-        let sum1 = `Lisa: ${obj.hobbies.reduce((acc, num) => acc + num)}`
-        let sum2 = `Rose: ${obj.friend.hobbies.reduce((acc, num) => acc + num)}`
+// function sum(obj) {
+//     try {
+//         let sum1 = `Lisa: ${obj.hobbies.reduce((acc, num) => acc + num)}`
+//         let sum2 = `Rose: ${obj.friend.hobbies.reduce((acc, num) => acc + num)}`
 
-        return `${sum1}\n${sum2}`
-    }catch (error){
-        return "Помилка"
-    }
+//         return `${sum1}\n${sum2}`
+//     }catch (error){
+//         return "Помилка"
+//     }
 
-}
+// }
+
+// console.log(sum(obj));
+
+// console.log(`Lisa: ${obj.hobbies.reduce((acc, num) => acc + num)}`);
+// console.log(`Rose: ${obj.friend.hobbies.reduce((acc, num) => acc + num)}`);
 
 
-console.log(sum(obj));
+//*********************************************************************************** */
+// Завдання: Створити об'єкт "Автомобіль" та реалізувати декілька методів для нього.
 
+// Опис:
 
-//console.log(`Lisa: ${obj.hobbies.reduce((acc, num) => acc + num)}`);
-//console.log(`Rose: ${obj.friend.hobbies.reduce((acc, num) => acc + num)}`);
+// Створіть об'єкт автомобіль з такими властивостями:
+
+// марка (наприклад, "Toyota")
+// модель (наприклад, "Corolla")
+// рік (наприклад, 2020)
+// кілометраж (наприклад, 5000)
+// включений (булева змінна, яка показує, чи заведений автомобіль)
+// Додайте до об'єкту такі методи:
+
+// завести: якщо автомобіль не заведений, то змінює включений на true, інакше виводить повідомлення "Автомобіль вже заведений".
+// вимкнути: якщо автомобіль заведений, то змінює включений на false, інакше виводить повідомлення "Автомобіль вже вимкнений".
+// проїхати: приймає кількість кілометрів як аргумент і додає їх до кілометраж. Якщо автомобіль вимкнений, виводить повідомлення "Заведіть автомобіль, щоб проїхати".
+
