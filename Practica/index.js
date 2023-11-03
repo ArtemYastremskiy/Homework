@@ -92,7 +92,6 @@ const auto = {
             this.isTurnedOn = false
         }
     },
-
     
     ride: function(distance) {
         this.kilometers += distance
