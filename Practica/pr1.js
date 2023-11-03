@@ -48,7 +48,10 @@ function pattern(n) {
 
 console.log(pattern(10));
 */
-
+/*
 // Task 2
-// Password1 = 'GobGh2uBYr3v&bd8!n84bGFT@!'
-// Password2 = 'Gobgh2ubyR3v&bd8!n84BGfT@!'
+const Password1 = 'GobGh2uBYr3v&bd8!n84bGFT@!'
+const Password2 = 'Gobgh2ubyR3v&bd8!n84BGfT@!'
+
+console.log(Password1.toLowerCase() == Password2.toLowerCase());
+*/
