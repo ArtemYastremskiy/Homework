@@ -49,3 +49,6 @@ function pattern(n) {
 console.log(pattern(10));
 */
 
+// Task 2
+// Password1 = 'GobGh2uBYr3v&bd8!n84bGFT@!'
+// Password2 = 'Gobgh2ubyR3v&bd8!n84BGfT@!'
