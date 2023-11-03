@@ -81,7 +81,7 @@ console.log(distance);
 */
 
 // Task 4
-const arr = [1,2,5,9, ' Hello ', 1] // Отримай суму всіх чисел в масиву
+
 
 
 
