@@ -18,3 +18,27 @@
 // 1*******8
 // 1********9
 // 1*********10
+
+function pattern(n) {
+    let output = "";
+    for (let i = 1; i <= n; i++) {
+      // Add the starting "1"
+      output += "1";
+      
+      // Add the appropriate number of asterisks
+      for (let j = 1; j < i; j++) {
+        output += "*";
+      }
+      
+      // Add the line number if it is not the first line
+      if (i > 1) {
+        output += i;
+      }
+      
+      // Add a newline if it is not the last line
+      if (i < n) {
+        output += "\n";
+      }
+    }
+    return output;
+  }
