@@ -68,3 +68,33 @@
 // вимкнути: якщо автомобіль заведений, то змінює включений на false, інакше виводить повідомлення "Автомобіль вже вимкнений".
 // проїхати: приймає кількість кілометрів як аргумент і додає їх до кілометраж. Якщо автомобіль вимкнений, виводить повідомлення "Заведіть автомобіль, щоб проїхати".
 
+
+
+const auto = {
+    mark: "Toyota",
+    model: "Corolla",
+    year: "2020",
+    kilometers: 5000,
+    isTurnedOn: true,
+
+    start: function() {
+        if(this.isTurnedOn) {
+            return "Автомобіль вже заведений"
+        } else {
+            this.isTurnedOn = true
+        }
+    },
+
+    finish: function() {
+        if (!this.isTurnedOn) {
+            return "Автомобіль вже вимкнений"
+        }else {
+            this.isTurnedOn = false
+        }
+    },
+
+    
+    ride: function(distance) {
+        this.kilometers += distance
+    }
+}

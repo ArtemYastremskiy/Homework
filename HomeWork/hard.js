@@ -2,5 +2,19 @@
 const obj = {
     name: "Vasy",
     age: 24,
+    num: 1
 };
-console.log(obj);
+
+const key = Object.keys(obj)
+const value = Object.values(obj)
+
+
+let resault = new Object()
+
+for (let i = 0; i < key.length; i++) {
+    resault[value[i]] = key[i];
+}
+
+
+
+console.log(resault);

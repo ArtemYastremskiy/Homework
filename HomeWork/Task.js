@@ -12,8 +12,8 @@ filter => arr.filter(test)) Example: [34, 896, 401, 77, 29, 111, 995, 4].filter(
 some => arr.every(test) > is check passed (1+ el-s) (bool). Example: [9674, 528].every((x) => x % 2 === 0) > true 
 find => arr.every(test) > VALUE of 1-st element, passsed the test. Example: [9674, 528].every((x) => x % 2 === 0) > true 
 findIndex => arr.every(test) >  INDEX of 1-st element, passsed the test. Example: [9674, 528].every((x) => x % 2 === 0) > true 
-flat =>  
-forEach =>  
+flat => [1, 2, [3, 4]].flat() => [1, 2, 3, 4]; [1, 2, , 4, 5].flat() => [1, 2, 4, 5]
+forEach => 
 map =>  
 reduce =>  
 reduceRight =>  
@@ -36,6 +36,3 @@ values =>
 entries =>  
 keys =>  
 */
-
-
-
