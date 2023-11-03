@@ -19,6 +19,8 @@
 // 1********9
 // 1*********10
 
+
+/*
 function pattern(n) {
     let output = "";
     for (let i = 1; i <= n; i++) {
@@ -42,3 +44,8 @@ function pattern(n) {
     }
     return output;
   }
+
+
+console.log(pattern(10));
+*/
+
