@@ -65,3 +65,19 @@ console.log(Password1.toLowerCase() == Password2.toLowerCase());
 // Write a function calculating distance between Point a and Point b.
 
 // Input coordinates fit in range  −50⩽x,y⩽50. Tests compare expected result and actual answer with tolerance of 1e-6.
+
+
+/*
+function distanceBetweenPoints(a, b) {
+    return Math.sqrt(Math.pow(a.x-b.x, 2) + Math.pow(a.y-b.y, 2))
+}
+
+let pointA = {x: 1, y: 2};
+let pointB = {x: 4, y: 6};
+
+let distance = distanceBetweenPoints(pointA, pointB);
+
+console.log(distance);
+*/
+
+
