@@ -81,7 +81,27 @@ console.log(distance);
 */
 
 // Task 4
+/*
 const arr = [1,2,5,9, ' Hello ', 1] // Отримай суму всіх чисел в масиву
 
+function sum(arr) {
+    for (let i of arr) {
+        if (typeof i != 'number') {
+            delete arr[arr.indexOf(i)]
+        }
+    }
+
+    return arr.reduce((acc, num) => acc+num)
+}
+
+console.log(sum(arr));
+*/
 
 
+const sum = arr.reduce((accumulator, currentValue) => {
+    // Перевіряємо, чи є елемент числом за допомогою функції `typeof`
+    if (typeof currentValue === 'number') {
+      return accumulator + currentValue;
+    }
+    return accumulator;
+  }, 0);
