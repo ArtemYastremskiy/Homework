@@ -57,4 +57,3 @@
 // #Output
 
 // The middle character(s) of the word represented as a string.
-

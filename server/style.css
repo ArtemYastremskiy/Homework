@@ -1,0 +1,9 @@
+body {
+    background-color: rebeccapurple;
+}
+
+h1 {
+    border: 5px;
+    border-color: rgb(255, 0, 0);
+    text-align: center;
+}
