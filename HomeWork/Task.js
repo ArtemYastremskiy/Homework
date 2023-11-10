@@ -13,15 +13,15 @@ some => arr.every(test) > is check passed (1+ el-s) (bool). Example: [9674, 528]
 find => arr.every(test) > VALUE of 1-st element, passsed the test. Example: [9674, 528].every((x) => x % 2 === 0) > true 
 findIndex => arr.every(test) >  INDEX of 1-st element, passsed the test. Example: [9674, 528].every((x) => x % 2 === 0) > true 
 flat => [1, 2, [3, 4]].flat() => [1, 2, 3, 4]; [1, 2, , 4, 5].flat() => [1, 2, 4, 5]
-forEach => 
-map =>  
-reduce =>  
-reduceRight =>  
-includes =>  
-indexOf =>  
-isArray =>  
-join =>  
-lastIndexOf =>  
+forEach => [1, 2, 3].forEach(elem => console.log(elem)) return undefined
+map =>  [1, 2, 3].map(elem => elem**3) => [1, 8, 27]
+reduce => ([1, 2, 3].reduce((acc, num) => acc + num)) => 6
+reduceRight => reversed reduse (iterate array from rihgt to left)
+includes => ['a', 'b', 'c'].includes('b') => true; ['a', 'b', 'c'].includes('d') => false
+indexOf =>  ['a', 'b', 'c'].indexOf('a') => 0
+isArray =>  Array.isArray([1, 2, 3]) => true; Array.isArray('1, 2, 3') => false 
+join =>  ['a', 'b', 'c'].join(',') => 'abc'
+lastIndexOf => ['a', 'b', 'c', 'a'].lastIndexOf(a) => 3
 keys =>  
 reverse =>  
 pop =>  
