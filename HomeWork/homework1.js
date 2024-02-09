@@ -10,7 +10,7 @@
 
 const numbers = [3.14, 5, -3, 0.5, 8]
 
-
+/*
 let integers = []
 
 for (let num of numbers) {
@@ -18,8 +18,10 @@ for (let num of numbers) {
         integers.push(num);
     };
 };
+*/
 
 
+let integers = numbers.filter((i) => i.isInteger)
 console.log(integers, '\n');
 
 /*

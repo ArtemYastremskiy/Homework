@@ -57,3 +57,43 @@
 // #Output
 
 // The middle character(s) of the word represented as a string.
+/*
+function getMiddle(str) {
+    for (let i = 0; i < str.length; i++) {
+        if (str.slice(0, i).length == str.slice(i + 2, str.length + 1).length) {
+            return str.at(i)
+        }
+    }
+};
+
+console.log(getMiddle("abcAdef"));
+*/
+
+//console.log(str.slice(0, i).length, str.slice(i, str.length + 1).length, str.at(i))
+//console.log(str.slice(0, i), str.slice(i, str.length + 1), str.at(i), '\n')
+
+
+
+const arr = ['arr', {a: 3}, [6,7,9], 4, true, String('Hello'), undefined, null, NaN, Number('34'), Number(12), +'66'];
+
+const result = {'arrays': [], 'other': []};
+
+
+arr.forEach((i) => {
+    let type = typeof i
+
+    if (Array.isArray(i)) {
+        result['arrays'].push(i)
+    } else if([undefined, NaN, Infinity, null].includes(i)) {
+        result['other'].push(i)
+    
+    } else if (result[type]) {
+        result[type].push(i)
+    } else {
+        result[type] = []
+        result[type].push(i)
+    }
+});
+
+
+console.log(result);

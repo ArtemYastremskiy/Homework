@@ -18,3 +18,24 @@ for (let i = 0; i < key.length; i++) {
 
 
 console.log(resault);
+
+--------------------------------------
+
+const arr = ['arr', {a: 3}, [6,7,9], 4, true, String('Hello'), undefined, null, NaN, Number('34'), Number(12), +'66'];
+
+const result = {};
+
+
+arr.forEach((i) => {
+    let type = typeof i
+
+    if (result[type]) {
+        result[type].push(i)
+    } else {
+        result[type] = []
+        result[type].push(i)
+    }
+});
+
+
+console.log(result);
